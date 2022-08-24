@@ -1,0 +1,39 @@
+//main: ../styles.less
+
+.page__nav {
+    margin-bottom: 50px;
+}
+
+.page__list {
+    display: flex;
+
+    & li {
+        margin-right: 5px;
+    }
+}
+
+.page__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media(max-width:480px) {
+    .page__nav {
+        margin-bottom: 20px;
+    }
+
+    .page__link  {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:360px) {
+    .page__nav {
+        margin-bottom: 10px;
+    }
+
+    .page__link {
+        font-size: 12px;
+    }
+}

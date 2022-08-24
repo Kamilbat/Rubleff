@@ -1,0 +1,207 @@
+//main: ../styles.less
+
+.goods {
+    margin-bottom: 79px;
+}
+
+.goods__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.goods__item {
+    width: 370px;
+    height: 216px;
+    border-radius: 9px;
+    margin-bottom: 46px;
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+
+    & a {
+        width: 370px;
+        height: 216px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-top: 47px;
+    }
+
+    &--1 {
+        background: url("../images/goods1.png") right bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+    }
+
+    &--2 {
+        background: url("../images/goods2.png") right bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+        transition: .5s ease;
+    }
+
+    &--3 {
+        background: url("../images/goods3.png") right bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+    }
+
+    &--4 {
+        background: url("../images/goods4.png") right bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+    }
+
+    &--5 {
+        background: url("../images/goods5.png") left 140% bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+    }
+}
+
+.goods__name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+}
+
+@media(max-width:1200px) {
+
+    .goods__item:nth-child(3) {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:990px) {
+
+    .goods__item {
+        margin-right: 30px;
+        width: 350px;
+
+        & a {
+            width: 350px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 0px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(4) {
+            margin-right: 0px;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .goods__item {
+        width: 300px;
+        margin-right: 20px;
+
+        &:nth-child(2,4) {
+            margin-right: 0;
+        }
+
+        & a {
+            width: 300px;
+        }
+    }
+
+    .goods__item:nth-child(3) {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:660px) {
+    .goods__item {
+        width: 210px;
+        margin-right: 10px;
+
+        &:nth-child(2,4) {
+            margin-right: 0;
+        }
+
+        & a {
+            width: 210px;
+            padding-top: 10px;
+        }
+
+         &--5 {
+        background: url("../images/goods5.png") right 100% bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+        }
+    }
+
+    .goods__item:nth-child(3) {
+        margin-right: 10px;
+    }
+
+    .goods__name {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:480px) {
+
+    .goods {
+        margin-bottom: 65px;
+    }
+
+    .goods__item {
+        width: 45%;
+        margin-right: 20px;
+
+        & a {
+            width: 100%;
+            padding-top: 14px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 20px;
+        }
+
+        &--5 {
+            background: url("../images/goods5.png") center bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+        }
+    }
+
+    .goods__name {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:360px) {
+
+    .goods {
+        margin-bottom: 50px;
+    }
+
+    .goods__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 28px;
+
+         &:nth-child(3) {
+            margin-right: 0px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--5 {
+            background: url("../images/goods5.png") left 160% bottom no-repeat, linear-gradient(111.94deg, #FFFFFF 0.11%, rgba(244, 244, 244, 0.99) 0%, #F0F0F0 102.79%);
+        }
+    }
+
+    .goods__name {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
